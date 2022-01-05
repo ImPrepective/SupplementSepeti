@@ -1,0 +1,8 @@
+button{
+    margin-right: 5px;
+    width: 120px;
+}
+.btn-primary:hover{
+    background-color:white;
+    color:blue;
+}

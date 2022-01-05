@@ -1,0 +1,28 @@
+<div class="row" id ="endis" 
+*ngFor="let cartItem of cartItems">
+    <div class="col-3">
+        
+    </div>
+    <div id="urun" class="col-7">
+        <div class="row">
+            <div class="col">
+                 {{cartItem.product.productName}}
+              </div>
+            <div class="col">
+                Urun Fiyati : {{cartItem.product.unitPrice}}TL
+            </div>
+            <div class="col">
+                Urun Adedi : {{cartItem.quantity}}
+            </div>
+            <div class="col">
+                Toplam Fiyat : {{cartItem.quantity * cartItem.product.unitPrice}}TL
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="mb-3">
+    <div> Toplam Tutar:</div>
+    <button (click)="completeToOrder()"id ="button" class="btn btn-outline-primary" type="button">Alisverisi Tamamla</button> 
+  </div>

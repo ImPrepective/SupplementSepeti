@@ -1,0 +1,12 @@
+span{
+    text-transform: uppercase;
+}
+#endis{
+    margin:5px;
+    border: grey 1px solid;
+    border-radius: 15px;
+}
+#button{
+    margin-left:20px;
+    justify-content: center;
+}

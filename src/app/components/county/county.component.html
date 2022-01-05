@@ -1,0 +1,24 @@
+<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+  <li class="nav-item dropdown">
+    <a
+      class="nav-link dropdown-toggle"
+      id="navbarDropdown"
+      role="button"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+    >
+      Iller
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+      <li
+        *ngFor="let county of counties"
+        routerLink=""
+        (click)="setCurrentCounty(county)"
+        (click)="reloadCurrentPage()"
+      >
+        <a class="dropdown-item">{{ county.countyName }}</a>
+      </li>
+    </ul>
+  </li>
+  <span *ngIf="currentCounty">{{ currentCounty.countyName }}</span>
+</ul>
